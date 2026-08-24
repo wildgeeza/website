@@ -1,0 +1,418 @@
+body {
+  font-family:        "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding-top:            20px;
+  /*  padding-top: 40px;*/
+    padding-bottom: 30px;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #a6a6a6;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:    #a6a6a6;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:    #a6a6a6;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:    #a6a6a6;
+}
+
+.container-narrow {
+  margin:             0 auto;
+  max-width:          830px;
+}
+
+a { 
+  color:              #27b5ea; 
+}
+a:hover { 
+  text-decoration:    none; 
+}
+
+.intro {
+    margin-top: 35px;
+}
+.intro h1 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #1a394f;
+}
+
+.intro p {
+  color:              #738890;
+}
+
+.intro .text p {
+  font-size:          16px;
+  line-height:        30px;
+}
+
+.intro .profile { 
+  margin-top:         35px; 
+}
+.intro .profile p {
+  font-size:          15px;
+  margin-top:         10px;
+  color:              #939393;
+}
+.intro .profile p a { 
+  color:              #939393;
+}
+.intro .profile p a:hover,
+.intro .profile p a.current { 
+  color:              #1a394f;
+}
+.intro .profile img {
+  margin-bottom:      15px;
+    border-radius: 50%;
+}
+
+
+.work { 
+  margin-top:         10px;
+}
+
+.work .text p {
+  font-family:        'Open Sans', sans-serif;
+  font-size:          18px;
+  color:              #1a394f;
+}
+
+.portfolio {
+  margin-top:         35px;
+ color:              #738890;
+}
+
+
+.portfolio h1 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 22px;
+  margin-bottom: 20px;
+  color: #1a394f;
+}
+
+.portfolio .text p {
+  font-size:          16px;
+  line-height:        30px;
+}
+
+.portfolio .overlay {
+    width:            400px;
+    height:           400px;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index:          1;
+    position:         absolute;
+    margin-left:      -400px;
+    display:          none;
+    text-align:       center;
+}
+.portfolio .overlay img {
+    margin-top:       75px;
+}
+
+.portfolio .overlay span {
+    font-family: 'Open Sans', sans-serif;
+    text-align: left;
+    font-size: 15px;
+    color: #fff;
+    width: 100%;
+    display: block;
+    margin-top: 10px;
+    margin-left: 15px; 
+    max-width: 400px;
+}
+
+.portfolio .overlay .seemore {
+    font-family: 'Open Sans', sans-serif;
+    text-align: left;
+    font-size: 15px;
+    color: #fff;
+    width: 100%;
+    display: block;
+    margin-top: 335px;
+    margin-left: 300px;        
+}
+
+.contact {
+  margin-top:         35px;
+}
+
+.contact h2 {
+  font-family:        'Open Sans', sans-serif;
+  font-size:          18px;
+  color:              #1a394f;
+}
+
+.contact p {
+  font-size:          14px;
+  line-height:        28px;
+  color:              #5d7179;
+}
+
+.the-form { margin-top: 15px; }
+.the-form input[type=text],
+.the-form textarea {
+  width:                  100%;
+  padding:                10px 15px;
+  border:                 1px solid #c1c1c1;
+  -moz-border-radius:     2px;
+  -webkit-border-radius:  2px;
+  border-radius:          2px;
+  -moz-box-shadow:        inset 0 1px 2px rgba(0,0,0,.14);
+  -webkit-box-shadow:     inset 0 1px 2px rgba(0,0,0,.14);
+  box-shadow:             inset 0 1px 2px rgba(0,0,0,.14);
+}
+.the-form .required {
+  background:             url("../img/select2.png") #fff no-repeat 100% -36px;
+}
+.the-form textarea {
+  -webkit-box-sizing:     border-box;
+  -moz-box-sizing:        border-box;
+  box-sizing:             border-box;
+}
+
+.the-form input[type=submit] {
+  background-color:       #4dadeb;
+  color:                  #fff;
+  font-size:              13px;
+  -moz-border-radius:     2px;
+  -webkit-border-radius:  2px;
+  border-radius:          2px;
+  border:                 1px solid #3d9ad7;
+  padding:                10px 30px;
+  float:                  right;
+}
+
+.the-form input[type=text] {
+  width:                  250px;
+  margin-right:           24px;
+}
+
+input[type=text]:focus,
+.the-form textarea:focus,
+.the-form .select2-container:focus {
+  border:                 1px solid #67b9ee;
+  -moz-box-shadow:        0 0 4px rgba(65,167,234,.38);
+  -webkit-box-shadow:     0 0 4px rgba(65,167,234,.38);
+  box-shadow:             0 0 4px rgba(65,167,234,.38);
+}
+
+.the-form #budget { 
+  width:                  281px; 
+}
+
+.copy { 
+  float:                  left; 
+  margin-top:             10px;
+  color:                  #5d7179; 
+  font-size:              14px; 
+}
+
+.errors { 
+  color:                  #f8733e;
+  font-weight:            bold;
+  font-size:              14px;
+  margin:                 10px 25px 0 0;
+  text-align:             right;
+  float:                  right;
+}
+
+#success {
+  -webkit-box-sizing:     border-box;
+  -moz-box-sizing:        border-box;
+  box-sizing:             border-box;
+  width:                  100%;
+  height:                 300px;
+  padding:                100px;
+}
+#success h3 {
+  font-family:        'Open Sans', sans-serif;
+  font-size:          18px;
+  color:              #1a394f;
+}
+
+.contact p {
+  font-size:          14px;
+  line-height:        28px;
+  color:              #5d7179;
+}
+  
+
+/* Select2 styles */
+
+.select2-container {
+  vertical-align:     middle;
+}
+.select2-choice:focus { 
+  outline:            0; 
+}
+
+.select2-container .select2-choice {
+  padding:            6px 15px;
+  border:             1px solid #c1c1c1;
+  height:             28px;
+  border-radius:      2px;
+  line-height:        29px;
+  background:         none;
+  filter:             none;
+  -moz-box-shadow:    inset 0 1px 2px rgba(0,0,0,.14);
+  -webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.14);
+  box-shadow:         inset 0 1px 2px rgba(0,0,0,.14);
+}
+.select2-search input { 
+  background:         none; 
+}
+
+.select2-container .select2-choice div {
+  width:              25px;
+  border-left:        none;
+  background:         none;
+  filter:             none;
+}
+.select2-container .select2-choice div b {
+  background-position:  0 4px;
+}
+.select2-dropdown-open .select2-choice div b {
+  background-position:  -23px 4px;
+}
+
+.select2-container-active .select2-choice,
+.select2-container-active .select2-choices,
+.select2-container-multi.select2-container-active .select2-choices {
+  border:             1px solid #67b9ee;
+  -moz-box-shadow:    0 0 4px rgba(65,167,234,.38);
+  -webkit-box-shadow: 0 0 4px rgba(65,167,234,.38);
+  box-shadow:         0 0 4px rgba(65,167,234,.38);
+  outline:            none;
+}
+
+.input-append .select2-container, .input-prepend .select2-container {
+  font-size:          14px;
+}
+
+.input-prepend .select2-container > a.select2-choice,
+.input-prepend .select2-container-multi .select2-choices {
+  border-top-left-radius:     0;
+  border-bottom-left-radius:  0;
+}
+
+.input-append .select2-container > a, 
+.input-append .select2-container-multi .select2-choices {
+  border-top-right-radius:    0;
+  border-bottom-right-radius: 0;
+}
+
+.select2-dropdown-open .select2-choice,
+.select2-dropdown-open .select2-choices {
+  border-bottom-left-radius:  0;
+  border-bottom-right-radius: 0;
+}
+
+.select2-dropdown-open.select2-drop-above .select2-choice,
+.select2-dropdown-open.select2-drop-above .select2-choices {
+  border-top-left-radius:     0;
+  border-top-right-radius:    0;
+}
+
+.input-prepend .select2-container > a.select2-choice > div,
+.input-append .select2-container > a.select2-choice > div {
+  display:                    none;
+}
+
+.input-append .select2-offscreen,
+.input-prepend .select2-offscreen {
+  position:         absolute;
+}
+
+/**
+ * This stops the quick flash when a native selectbox is shown and 
+ * then replaced by a select2 input when javascript kicks in. This can be 
+ * removed if javascript is not present 
+ */  
+select.select2 {
+  height:       28px;
+  visibility:   hidden;
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) { 
+ .portfolio {
+    margin-top: 0 !important; 
+  }
+  .work .text p { text-align: center; }
+  .portfolio .span6 {
+    margin-left:  0 !important;
+    width:        100%;
+    text-align:   center !important; 
+    margin-top:   35px;
+  }
+    .intro .span9, .intro .span3 {
+      width:      100% !important;
+    } 
+    .intro .profile { 
+      position:     absolute;
+      text-align:   center !important;
+      top:          40px;
+      left: 0
+    }
+    .intro .profile img { width: 95px; }
+    .intro .profile .twitter-button { display: block; }
+    .intro .profile .linkedin-button { display: block; }
+    .intro .profile p { display:block; }
+    .intro .text { 
+      margin-top: 250px; 
+      text-align: center;
+    }
+        
+    .contact { text-align: center; }
+
+    .the-form input[type=text],
+    .the-form input[type=submit],
+    .the-form textarea {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      width: 100%;
+      padding: 20px 15px;
+      margin: 0 0 25px 0;
+    }
+    .the-form textarea { margin-top: 25px }
+    .the-form #budget {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      width: 100%;
+    }
+    .form-horizontal .control-group { margin-bottom: 0; }
+
+    .errors, .copy {
+      display: block;
+      float: none;
+      text-align: center;
+      margin: 20px 0 0 0;
+    }
+}
+ 
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .portfolio { margin-top: 0 !important; }
+  .portfolio .span6 {
+    margin-left: 0 !important;
+    width: 100%;
+    text-align: center !important; 
+    margin-top: 35px;
+  }
+      .intro .profile img { width: 60px; margin-bottom: 20px; }
+      .intro .text { margin-top: 210px; text-align: center; }
+      .intro .text p { font-size: 15px; }
+      .intro .text h1 { font-size: 19px; }
+}
+
+
+#flash {
+ margin-top: -70px;
+  width: 800px;
+  height: 600px;
+}
