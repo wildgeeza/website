@@ -98,6 +98,30 @@ a:hover {
   line-height:        30px;
 }
 
+.youtube-player {
+
+  max-width:          830px;
+
+}
+
+.youtube-player iframe {
+
+  display:            block;
+
+  width:              100%;
+
+  max-width:          830px;
+
+  aspect-ratio:       830 / 442;
+
+  height:             auto;
+
+  border:             0;
+
+}
+
+
+
 .portfolio .overlay {
     width:            400px;
     height:           400px;
