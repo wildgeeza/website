@@ -1,101 +1,526 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-  <title>Stu Wild</title>
-
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-  <link href="css/bootstrap-responsive.min.css" rel="stylesheet" media="screen">
-  <!-- <link href="css/bootstrap-theme.min.css" rel="stylesheet" media="screen"> -->
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-  <!-- <link href="css/select2.css" rel="stylesheet" media="screen"> -->
-  <link href="css/main.css" rel="stylesheet" media="screen">
+  <meta name="description" content="Technical Artist portfolio for games, real-time rendering, shaders, VFX, and procedural art.">
+  <title>Stu Wild | Technical Artist</title>
 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+  <link href="css/main.css" rel="stylesheet">
 </head>
-
 <body>
 
-  <div class="container-narrow">
-    <div class="intro row-fluid">
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#top"><span class="brand-mark">{&lt;/&gt;} Stu Wild</span></a>
 
-      <div class="text span9">
-        <h1>Stu Wild - Senior Technical Artist.</h1>
-        <p>Senior Technical Artist with over 20 years of experience architecting high-performance UI systems, custom editor tooling and cross-discipline production pipelines for AAA gaming and major commercial sectors.</p>
-        <p>A proven bridge between core engineering and creative departments, specialising in runtime engine performance, optimisation, dynamic UI workflows, and studio-wide standards, with the
-          ability to learn &amp; apply new technologies quickly.</p>
-        <!-- <p>Unity, C#, UI &amp; UX design, Adobe Photoshop &amp; XD, OOP, Flatbuffer Schema and JSon, Scaleform, Adobe Flash &amp; ActionScript. Proficient on PC and Mac.</p> -->
+      <button class="navbar-toggler border-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-label="Toggle navigation">
+        <i class="bi bi-list text-light"></i>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Specialisms</a></li>
+          <li class="nav-item"><a class="nav-link" href="#work">Work</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#tools">Toolkit</a></li>
+          
+          <!--
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          -->
+          
+          <li class="nav-item"><a class="btn btn-cyan rounded-1 px-4" href="#work">View work <i class="bi bi-arrow-up-right ms-1"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  
+  <!-- Hero -->
+  <header id="top" class="hero">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-8">
+          <div class="eyebrow mb-3">Senior Technical Artist · Games &amp; Interactive Systems</div>
+          <h1 class="mb-4">Building the bridge<br>between <span>art</span> and <span>engineering.</span></h1>
+          <div class="d-flex flex-wrap gap-2">
+            <a class="btn btn-cyan px-4 py-3" href="#work">Explore selected work <i class="bi bi-arrow-down-right ms-2"></i></a>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="tech-panel p-4 text-center">
+            <img class="portrait mb-3" src="https://media.licdn.com/dms/image/v2/D4E03AQHcGcs3p3OYcA/profile-displayphoto-scale_400_400/B4EaCpt62yGgAg-/0/1789553783151?e=1791417600&v=beta&t=SMV3oLYIP8ToVCPtkKHtTF-JoNLp8W66mzWHkK5hkN8" alt="Stu Wild">
+                
+            <div>
+                <span><a class="social-link" href="https://www.linkedin.com/in/stuwild/" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                <span><a class="social-link" href="https://x.com/wildgeeza" aria-label="twitter-x"><i class="bi bi-twitter-x"></i></a></span>
+            </div>
+                
+            <div class="row g-3 text-start mt-2">
+              <div class="col-6">
+                <div class="stat">
+                  <strong>25+</strong>
+                  <span>years in CG, UI &amp; games</span>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="stat">
+                  <strong>AAA</strong>
+                  <span>UI &amp; Tooling</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- About -->
+  <section id="about" class="section-padding">
+    <div class="container">
+      <div class="row g-5 align-items-start">
+        <div class="col-lg-5">
+          <p class="eyebrow">01 / About</p>
+          <h2 class="section-heading display-5">The bridge between<br>art and code.</h2>
+          <div class="section-rule"></div>
+        </div>
+        <div class="col-lg-7">
+            <p class="lead text-muted-custom">
+            Technical Art. UI Systems. Ambitious Visuals.</p>
+          <p class="text-muted-custom">
+          I’m a Senior Technical Artist with <b>25+ years of experience working between art, design and engineering</b>, specialising in real-time workflows, tools, optimisation and visual systems for AAA games and commercial projects.</p>
+          <p class="text-muted-custom">
+          I’m driven by the same challenge wherever it appears: take a complex visual idea, solve the technical problem behind it and turn it into something <b>artists can build</b> and players can experience.</p>
+          <p class="text-muted-custom"><b>
+          I learn by doing. I solve by building. I’m always looking for the next technical problem to solve.</b></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  
+  <!-- Specialisms -->
+  <section id="skills" class="section-padding" style="background:rgba(16,22,34,.55);">
+    <div class="container">
+      <p class="eyebrow">02 / Specialisms</p>
+      <h2 class="section-heading display-5">What I bring to the team.</h2>
+      <div class="col-lg-6">
+        <h2 class="section-heading display-9 mt-2">Technical art that survives production.</h2>
+        <div class="section-rule"></div>
+        <p class="text-muted-custom">The focus is not only on making a feature work, but on making it understandable, repeatable, measurable and maintainable for the wider team.</p>
+      </div>
+      
+    <div class="row g-4">
+
+    <section id="systems" class="section-padding pt-0">
+      <div class="container">
+        <div class="row g-4">
+
+            <div class="row g-3">
+                
+                <div class="col-md-4">
+                  <div class="tech-panel case-study h-100">
+                    <h3><i class="bi bi-people me-2" style="color:var(--cyan)"></i>Enablement</h3>
+                    <p class="mb-0">
+                    UI &amp; UX design and development. Studio-wide guidelines, mentoring, onboarding, Agile/Scrum and cross-discipline collaboration.</p>
+                  </div>
+                </div>
+                
+                <div class="col-md-4">
+                  <div class="tech-panel case-study h-100">
+                    <h3><i class="bi bi-code-slash me-2" style="color:var(--cyan)"></i>Engineering</h3>
+                    <p class="mb-0">Unity, C#, JSON, Flatbuffer schemas, basic HLSL, custom editor extensions and data-driven runtime systems.</p>
+                  </div>
+                </div>
+                
+                <div class="col-md-4">
+                  <div class="tech-panel case-study h-100">
+                    <h3><i class="bi bi-stars me-2" style="color:var(--cyan)"></i>Audio, Motion & VFX</h3>
+                    <p class="mb-0">Audio triggers via timeline & code, Animator hierarchies, Tween scripting, UI particle systems and custom script callback animation flows.</p>
+                  </div>
+                </div>
+                
+                <div class="col-md-4">
+                  <div class="tech-panel case-study h-100">
+                    <h3><i class="bi bi-tools me-2" style="color:var(--cyan)"></i>Pipeline &amp; Tooling</h3>
+                    <p class="mb-0">Create custom Unity editor tools and workflows, asset processing automation and best practices documentation. Ability to learn and apply new technologies quickly.</p>
+                  </div>
+                </div>
+                
+                <div class="col-md-4">
+                  <div class="tech-panel case-study h-100">
+                    <h3><i class="bi bi-recycle me-2" style="color:var(--cyan)"></i>Reusable Architecture</h3>
+                    <p class="mb-0">CMS managed layout mindset, creating UI structures populated dynamically via code injection.</p>
+                  </div>
+                </div>
+              
+              <div class="col-md-4">
+                <div class="tech-panel case-study h-100">
+                  <h3><i class="bi bi-activity me-2" style="color:var(--cyan)"></i>Optimisation</h3>
+                  <p class="mb-0">Unity Profiler, deep memory diagnostics, overdraw analysis, polygon reduction and platform testing.</p>
+                </div>
+              </div>
+              
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    </div>
+    </div>
+  </section>
+
+
+  <!-- Selected Work & Portfolio -->
+  <div id="projects"></div>
+  <section id="work" class="section-padding">
+    <div class="container">
+      <div class="row align-items-end mb-4">
+        <div class="col-lg-8">
+          <div class="eyebrow">03 / Selected work</div>
+          <h2 class="section-heading display-5 mt-2">Work shaped around complex problems.</h2>
+          <div class="section-rule"></div>
+          <p class="text-muted-custom mb-0">Explore representative projects and technical art capabilities across AAA mobile titles and real-time systems.</p>
+        </div>
       </div>
 
-      <div class="profile span3 text-center">
+      <div class="d-flex flex-wrap gap-2 mb-4" role="group" aria-label="Filter portfolio cards">
+        <button class="filter-btn active" data-filter="all">All work</button>
+        <button class="filter-btn" data-filter="ui">UI systems</button>
+        <button class="filter-btn" data-filter="tools">Tooling</button>
+        <button class="filter-btn" data-filter="performance">Performance</button>
+        <button class="filter-btn" data-filter="motion">Motion</button>
+      </div>
 
-        <img src="img/intro.jpg" alt="stuwild-linkedin" class="img-rounded" width="150" height ="150"/>
-        <div class="linkedin-button">
-          <a href="https://uk.linkedin.com/in/stuwild" target="_blank" rel="noopener">View Linked&nbsp;<span class="linkedin-logo">in</span> Profile</a>
+      <div class="row g-4" id="projectGrid">
+        <div class="col-md-6 col-xl-4 project-item" data-category="ui tools performance motion">
+          <article class="tech-panel project-card">
+            <img class="project-image" src="img/nm/csr3/csr3.png" alt="CSR3">
+            <div class="project-body">
+              <div class="project-meta mb-2">Senior Technical Artist</div>
+              <h3 class="project-title">CSR3</h3>
+              <p class="text-muted-custom small mb-2">Worked on the upcoming mobile title CSR3, available in select territories.</p>
+              <p class="text-muted-custom small mb-3">Production, peer support, tech tooling, best practices &amp; pipelines. VFX, HLSL, UI animation &amp; tweening.</p>
+              <div class="d-flex flex-wrap gap-2 mb-3">
+                <span class="tag">Unity</span>
+                <span class="tag">C#</span>
+                <span class="tag">Animation</span>
+                <span class="tag">Tweening</span>
+                <span class="tag">Memory diagnostics</span>
+                <span class="tag">Financial risk management</span>
+                <span class="tag">UI Optimisation</span>
+                <span class="tag">HLSL</span>
+                <span class="tag">Agile/Scrum</span>
+              </div>
+              <!--
+              <a href="./nm_csr3.html" class="text-decoration-none text-info small fw-semibold"><i>Case study to follow</i> <i class="bi bi-arrow-up-right"></i></a>
+              -->
+            </div>
+          </article>
         </div>
 
-        <div class="twitter-button">
-
-          <a href="https://twitter.com/wildgeeza" class="twitter-follow-button" data-show-count="false"
-            data-size="large" data-dnt="true">Follow @wildgeeza</a>
+        <div class="col-md-6 col-xl-4 project-item" data-category="ui performance">
+          <article class="tech-panel project-card">
+            <img class="project-image" src="img/nm/csr2/csr2.jpg" alt="CSR2">
+            <div class="project-body">
+              <div class="project-meta mb-2">Technical Artist</div>
+              <h3 class="project-title">CSR2</h3>
+              <p class="text-muted-custom small mb-2">Helped improve UI &amp; UX for the $1B+ revenue, 180M+ player base of CSR2.</p>
+              <p class="text-muted-custom small mb-3">Worked on the introduction of dynamically populating horizontal gacha marketplace and a <i>pooled</i> scrolling system to improve UI speed.</p>
+              <div class="d-flex flex-wrap gap-2 mb-3">
+                <span class="tag">Unity</span>
+                <span class="tag">C#</span>
+                <span class="tag">UI/UX Improvements</span>
+                <span class="tag">Performance Profiling</span>
+              </div>
+              <!--
+              <a href="./nm_csr3.html" class="text-decoration-none text-info small fw-semibold"><i>Case study to follow</i> <i class="bi bi-arrow-up-right"></i></a>
+              -->
+            </div>
+          </article>
         </div>
 
-      </div>
+        <div class="col-md-6 col-xl-4 project-item" data-category="ui tools">
+          <article class="tech-panel project-card">
+            <img class="project-image" src="img/nm/dot/dot.jpg" alt="Dawn of Titans">
+            <div class="project-body">
+              <div class="project-meta mb-2">UI Technical Artist</div>
+              <h3 class="project-title">Dawn of Titans</h3>
+              <p class="text-muted-custom small mb-2">Collaborated alongside UX &amp; UI artists to develop core UI experience flow and templates for the <i class="text-decoration-none text-info">multi-award winning &amp; BAFTA nominated</i> mobile title.</p>
+              <p class="text-muted-custom small mb-3">Creation of and peer support for, all UI experiences throughout the game, along with introducing screen and widget templates and best practices.</p>
+              <div class="d-flex flex-wrap gap-2">
+                <span class="tag">UI/UX</span>
+                <span class="tag">C++</span>
+                <span class="tag">Adobe Flash</span>
+                <span class="tag">ScaleForm GFx</span>
+                <span class="tag">Templates</span>
+                <span class="tag">Best practices</span>
+                <span class="tag">Peer Support</span>
+              </div>
+            </div>
+          </article>
+        </div>
 
+        <div class="col-md-6 col-xl-4 project-item" data-category="ui tools">
+          <article class="tech-panel project-card">
+            <img class="project-image" src="img/pkr/pkrlogo.jpg" alt="PKR">
+            <div class="project-body">
+              <div class="project-meta mb-2">Lead Flash/ScaleForm GFx Developer</div>
+              <h3 class="project-title">PKR</h3>
+              <p class="text-muted-custom small mb-3">Oversaw the production and improvement of all Flash/ScaleForm GFx based UI assets for cross-platform online Poker and Casino, including PC, Mac, iOS and Android.</p>
+              <div class="d-flex flex-wrap gap-2">
+                <span class="tag">UI/UX</span>
+                <span class="tag">Adobe Flash</span>
+                <span class="tag">ScaleForm GFx</span>
+                <span class="tag">Peer Support</span>
+                <span class="tag">Cross-platform</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-md-6 col-xl-4 project-item" data-category="ui motion">
+          <article class="tech-panel project-card">
+            <div class="project-art">
+              <i class="bi bi-layout-text-window-reverse art-symbol"></i>
+            </div>
+            <div class="project-body">
+              <div class="project-meta mb-2">UI architecture · Runtime workflows</div>
+              <h3 class="project-title">Dynamic screen systems</h3>
+              <p class="text-muted-custom small mb-3">Engineered C# view scripts driven by Flatbuffer schemas so designer-configured data could populate and update screens from singular templates.</p>
+              <div class="d-flex flex-wrap gap-2">
+                <span class="tag">C#</span>
+                <span class="tag">Flatbuffers</span>
+                <span class="tag">Unity UI</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-md-6 col-xl-4 project-item" data-category="tools ui">
+          <article class="tech-panel project-card">
+            <div class="project-art violet">
+              <i class="bi bi-braces-asterisk art-symbol"></i>
+            </div>
+            <div class="project-body">
+              <div class="project-meta mb-2">Editor tooling · Asset processing</div>
+              <h3 class="project-title">Designer-focused Unity tools</h3>
+              <p class="text-muted-custom small mb-3">Built editor extensions to remove placeholder UI art during local saves and record GUID references into ScriptableObjects for screen layout design and review.</p>
+              <div class="d-flex flex-wrap gap-2">
+                <span class="tag">Unity Editor</span>
+                <span class="tag">Automation</span>
+                <span class="tag">ScriptableObjects</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-md-6 col-xl-4 project-item" data-category="performance tools">
+          <article class="tech-panel project-card">
+            <div class="project-art green">
+              <i class="bi bi-speedometer2 art-symbol"></i>
+            </div>
+            <div class="project-body">
+              <div class="project-meta mb-2">Diagnostics · Rendering optimisation</div>
+              <h3 class="project-title">Overdraw &amp; polygon diagnostics</h3>
+              <p class="text-muted-custom small mb-3">Created runtime overdraw visualisation and automated sprite polygon tooling, reducing unnecessary transparency and supporting consistent GPU and memory standards.</p>
+              <div class="d-flex flex-wrap gap-2">
+                <span class="tag">Profiling</span>
+                <span class="tag">GPU rendering</span>
+                <span class="tag">Asset standards</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-md-6 col-xl-4 project-item" data-category="motion ui">
+          <article class="tech-panel project-card">
+            <div class="project-art violet">
+              <i class="bi bi-bezier2 art-symbol"></i>
+            </div>
+            <div class="project-body">
+              <div class="project-meta mb-2">Animation · Interaction design</div>
+              <h3 class="project-title">Hybrid motion workflows</h3>
+              <p class="text-muted-custom small mb-3">Combined Unity Animator hierarchies, scripted Tweening and callback-driven animation flows for smooth transitions and reactive UI state changes.</p>
+              <div class="d-flex flex-wrap gap-2">
+                <span class="tag">Animator</span>
+                <span class="tag">Tweening</span>
+                <span class="tag">Callbacks</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-md-6 col-xl-4 project-item" data-category="ui performance">
+          <article class="tech-panel project-card">
+            <div class="project-art">
+              <i class="bi bi-translate art-symbol"></i>
+            </div>
+            <div class="project-body">
+              <div class="project-meta mb-2">Typography · Memory budgets</div>
+              <h3 class="project-title">Multilingual font systems</h3>
+              <p class="text-muted-custom small mb-3">Implemented single-weight multilingual font sets with TextMeshPro variants and fallback systems to reduce licensing exposure and memory footprint.</p>
+              <div class="d-flex flex-wrap gap-2">
+                <span class="tag">TextMeshPro</span>
+                <span class="tag">Localisation</span>
+                <span class="tag">Memory</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-md-6 col-xl-4 project-item" data-category="tools performance">
+          <article class="tech-panel project-card">
+            <div class="project-art green">
+              <i class="bi bi-diagram-3 art-symbol"></i>
+            </div>
+            <div class="project-body">
+              <div class="project-meta mb-2">Pipeline · Studio enablement</div>
+              <h3 class="project-title">Production standards &amp; pipelines</h3>
+              <p class="text-muted-custom small mb-3">Authored technical art guidelines, supported UI artist teams and mentored global across asset workflows, layout standards and build validation.</p>
+              <div class="d-flex flex-wrap gap-2">
+                <span class="tag">Documentation</span>
+                <span class="tag">Mentoring</span>
+                <span class="tag">CI workflows</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
     </div>
+  </section>
 
-  <div class="container-narrow">
-
-    <div class="portfolio row-fluid">
-
-      <div class="span6">
-        <img class="lazy" src="img/lazyBg.gif" data-original="img/nm/csr3/csr3thumb.jpg" width="400" height="400">
-        <a href="nm-csr3.html" class="overlay">
-          <span>CSR3 - NaturalMotion</span>
-          <span class="seemore">SEE MORE &gt;</span>
-        </a>
+  
+  <!-- TIMELINE -->
+  <section id="experience" class="section-padding pt-0">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-5">
+          <div class="eyebrow">04 / Career timeline</div>
+          <h2 class="section-heading display-6 mt-2">Experience across games and interactive media.</h2>
+          <div class="section-rule"></div>
+          <p class="text-muted-custom">A career spanning over 25 years in AAA mobile games, interactive entertainment, commercial and private digital campaigns and large-scale eLearning systems.</p>
+        </div>
+        <div class="col-lg-7">
+          <div class="timeline">
+            <div class="timeline-item">
+              <h4>NaturalMotion - (Zynga / Take-Two Interactive)</h4>
+              <small>Senior Technical Artist · 2014–2026</small>
+              <p class="text-muted-custom mt-2 mb-0">UI pipelines and architecture for mobile titles including Dawn of Titans and the CSR Racing franchise; tooling, profiling, asset standards and mentorship.</p>
+            </div>
+            <div class="timeline-item">
+              <h4>PKR</h4>
+              <small>Lead Flash UI Designer &amp; Developer · 2010–2014</small>
+              <p class="text-muted-custom mt-2 mb-0">Interactive UI architecture, API documentation tooling, local testing extensions and cross-platform casino experiences.</p>
+            </div>
+            <div class="timeline-item">
+              <h4>JYC Global / Air New Zealand</h4>
+              <small>Media Designer &amp; Developer / UI Designer &amp; Developer · 2007–2010</small>
+              <p class="text-muted-custom mt-2 mb-0">XML-driven presentation systems, multilingual campaigns, interactive tools and executive-facing prototypes.</p>
+            </div>
+            <div class="timeline-item">
+              <h4>Earlier leadership &amp; consulting roles</h4>
+              <small>Media Designer &amp; Developer / UI Designer &amp; Developer · 1999–2006</small>
+              <p class="text-muted-custom mt-2 mb-0">Multidisciplinary interactive teams, Fortune 500 accounts and eLearning systems for UK law enforcement.</p>
+            </div>
+            <div class="timeline-item mb-0">
+              <h4>Brunel University</h4>
+              <small>Graduate · 1996–1999</small>
+              <p class="text-muted-custom mt-2 mb-0">Product Design BSc 2.1 (Hons)</p>
+            </div>
+          </div>
+        </div>
       </div>
-
-      <div class="span6">
-        <img class="lazy" src="img/lazyBg.gif" data-original="img/nm/csr2/csr2thumb.jpg" width="400" height="400">
-        <a href="nm-csr2.html" class="overlay">
-          <span>CSR2 - NaturalMotion</span>
-          <span class="seemore">SEE MORE &gt;</span>
-        </a>
-      </div>
-
     </div>
+  </section>
+  
+  <!-- Toolkit -->
+  <section id="tools" class="section-padding" style="background:rgba(16,22,34,.55);">
+    <div class="container">
+      <p class="eyebrow">05 / Toolkit</p>
+      <h2 class="section-heading display-5">Tools of the trade.</h2>
+      <div class="section-rule"></div>
 
-    <div class="portfolio row-fluid">
+      <div class="row g-4">
+        <div class="col-lg-6">
+          <div class="tech-panel p-4 h-100">
+            <h5 class="mb-4"><i class="bi bi-boxes tool-logo me-2"></i>Software &amp; engines</h5>
+            <div class="mb-3"><div class="d-flex justify-content-between small mb-2"><span>Unity &amp; Unity Editor</span><span class="text-muted-custom">Advanced</span></div><div class="progress"><div class="progress-bar" style="width:92%"></div></div></div>
+            <div class="mb-3"><div class="d-flex justify-content-between small mb-2"><span>Unity Profiler &amp; Diagnostics</span><span class="text-muted-custom">Advanced</span></div><div class="progress"><div class="progress-bar" style="width:90%"></div></div></div>
+            <div class="mb-3"><div class="d-flex justify-content-between small mb-2"><span>Rider IDE</span><span class="text-muted-custom">Advanced</span></div><div class="progress"><div class="progress-bar" style="width:90%"></div></div></div>
+            <div class="mb-3"><div class="d-flex justify-content-between small mb-2"><span>TextMeshPro &amp; Font Tools</span><span class="text-muted-custom">Advanced</span></div><div class="progress"><div class="progress-bar" style="width:85%"></div></div></div>
+            <div class="mb-3"><div class="d-flex justify-content-between small mb-2"><span>Adobe Flash &amp; ScaleForm GFx</span><span class="text-muted-custom">Advanced</span></div><div class="progress"><div class="progress-bar" style="width:83%"></div></div></div>
+            <div class="mb-3"><div class="d-flex justify-content-between small mb-2"><span>Adobe Photoshop</span><span class="text-muted-custom">Proficient</span></div><div class="progress"><div class="progress-bar" style="width:80%"></div></div></div>
+          </div>
+        </div>
 
-      <div class="span6">
-        <img class="lazy" src="img/lazyBg.gif" data-original="img/nm/dot/dotthumb.png" width="400" height="400">
-        <a href="nm-dot.html" class="overlay">
-          <span>Dawn of Titans - NaturalMotion</span>
-          <span class="seemore">SEE MORE &gt;</span>
-        </a>
-
+        <div class="col-lg-6">
+          <div class="tech-panel p-4 h-100">
+            <h5 class="mb-4"><i class="bi bi-code-square tool-logo me-2"></i>Technical workflow</h5>
+            <div class="d-flex flex-wrap gap-2 mb-4">
+              <span class="tag">C#</span>
+              <span class="tag">C++</span>
+              <span class="tag">HLSL</span>
+              <span class="tag">Flatbuffers</span>
+              <span class="tag">JSON</span>
+              <span class="tag">ScriptableObjects</span>
+              <span class="tag">Perforce</span>
+              <span class="tag">Swarm</span>
+              <span class="tag">Git</span>
+              <span class="tag">Jira</span>
+              <span class="tag">Confluence</span>
+              <span class="tag">Jenkins</span>
+              <span class="tag">Tweening &amp; Motion</span>
+              <span class="tag">UI Particles &amp; VFX</span>
+              <span class="tag">Overdraw &amp; Memory Diagnostics</span>
+              <span class="tag">Multilingual Font Systems</span>
+              <span class="tag">Agile / Scrum</span>
+            </div>
+            <p class="text-muted-custom small mb-0">I enjoy building artist-friendly tools, documenting workflows, and creating systems that are easy for a production team to adopt and extend.</p>
+          </div>
+        </div>
+        
       </div>
-
-      <div class="span6">
-
-        <img class="lazy" src="img/lazyBg.gif" data-original="img/pkr/pkrlogo.jpg" width="400" height="400">
-        <a href="pkr.html" class="overlay">
-          <span>Online - PKR</span>
-          <span class="seemore">SEE MORE &gt;</span>
-        </a>
-      </div>
-
     </div>
+  </section>
+  
+  
+  
+  <footer class="py-4">
+    <div class="container d-flex flex-wrap justify-content-between align-items-center gap-3">
+      <small>© <span id="year"></span> Stu Wild · Technical Artist</small>
+      <small class="font-monospace">Built for real-time worlds.</small>
+    </div>
+  </footer>
 
-  </div>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
 
-  <script src="js/jquery.min.js"></script>
-  <script src="js/bootstrap.min.js"></script>
-  <script src="js/select2.min.js"></script>
-  <script src="js/jquery.lazyload.min.js"></script>
-  <script src="js/main.js"></script>
+    const buttons = [...document.querySelectorAll('[data-filter]')];
+    const cards = [...document.querySelectorAll('.project-item')];
 
+    buttons.forEach(button => {
+      button.addEventListener('click', () => {
+        const filter = button.dataset.filter;
+        buttons.forEach(b => b.classList.toggle('active', b === button));
+        cards.forEach(card => {
+          const categories = card.dataset.category.split(' ');
+          card.classList.toggle('d-none', filter !== 'all' && !categories.includes(filter));
+        });
+      });
+    });
+  </script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  
 </body>
 </html>
