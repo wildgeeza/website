@@ -1,0 +1,431 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="UX case study: scaling the CSR Racing 2 Store from fixed inventory to dynamic LiveOps.">
+  <title>CSR2 | Technical Artist Case Study</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+  <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#top"><span class="brand-mark">{&lt;/&gt;} Stu Wild</span></a>
+
+        <button class="navbar-toggler border-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-label="Toggle navigation">
+          <i class="bi bi-list text-light"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-3">
+            <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="#skills">Specialisms</a></li>
+            <li class="nav-item"><a class="nav-link" href="#work">Work</a></li>
+            <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+            <li class="nav-item"><a class="nav-link" href="#tools">Toolkit</a></li>
+            
+            <!--
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            -->
+            
+            <li class="nav-item"><a class="btn btn-cyan rounded-1 px-4" href="#work">View work <i class="bi bi-arrow-up-right ms-1"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  <!-- Case study header -->
+  <header class="case-hero">
+    <div class="container">
+      <a href="technical-artist-bootstrap-portfolio.html#projects" class="text-decoration-none text-muted-custom small">
+        <i class="bi bi-arrow-left me-2"></i>Back to selected work
+      </a>
+
+      <div class="row align-items-end g-5 mt-2">
+        <div class="col-lg-8">
+          <p class="eyebrow mb-3">// Case study · Full Stack Improvement</p>
+          <h1>Scaleable <span>Store</span>.</h1>
+          <p class="lead text-muted-custom mt-4 mb-0">
+          I helped transform CSR2's Store from a fixed collection of slots into a scalable, dynamic Store where offers could be introduced, removed and reordered according to running events, timing, special offers and LiveOps requirements.
+          </p>
+        </div>
+        <div class="col-lg-4">
+          <div class="metadata-grid">
+            <div class="metadata-item"><span class="meta-label">Role</span>Full stack UI/UX, Tech Art &amp; Production</div>
+            <div class="metadata-item"><span class="meta-label">Tech</span>Unity, C#, AdobeXD</div>
+            <div class="metadata-item"><span class="meta-label">Focus</span>Scalable Store</div>
+            <div class="metadata-item"><span class="meta-label">Status</span>Live</div>
+          </div>
+        </div>
+      </div>
+
+      <img class="hero-art mt-5"
+           src="img/nm/csr2/showdownOffers.png"
+           alt="CSR2 Store promotional offers artwork">
+
+    </div>
+  </header>
+
+  <!-- Overview -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="row g-5">
+        <div class="col-lg-5">
+          <p class="eyebrow">01 / Overview</p>
+          <h2 class="section-heading display-5">From Fixed Inventory to Dynamic LiveOps</h2>
+          <div class="section-rule"></div>
+          <div class="d-flex flex-wrap gap-2">
+            <span class="tag">Unity</span>
+            <span class="tag">C#</span>
+            <span class="tag">AdobeXD</span>
+            <span class="tag">UX</span>
+          </div>
+        </div>
+
+        <div class="col-lg-7">
+          <p class="body-copy">
+          CSR Racing 2's Store was a key part of the game's economy, providing players with access to Gold, Cash, Keys, bundles and promotional offers.</p>
+          <p class="body-copy">
+          As the game's LiveOps strategy evolved, the Store itself became a constraint. The original experience was based around a largely fixed collection of on-screen promotional slots. This worked when the number of offers was relatively small, but increasingly limited the ability to introduce new promotions, react to events and run multiple offers simultaneously.</p>
+          <p class="body-copy">
+          Around 2020, I pushed the UX and design direction towards a scrollable Store experience. This changed the Store from a fixed collection of promotional slots into a scalable content system capable of supporting a much larger and more dynamic range of offers.</p>
+          <div class="tech-panel p-4 mt-4">
+            <div class="meta-label mb-2">The fundamental shift</div>
+            <p class="body-copy mb-0 fw-semibold">
+              Instead of designing around how many offers could fit on the screen, we could design around how many offers the LiveOps strategy needed.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Challenge -->
+  <section class="section-padding" style="background:rgba(16,22,34,.55);">
+    <div class="container">
+      <div class="row g-5 align-items-center">
+        <div class="col-lg-6">
+          <p class="eyebrow">02 / The challenge</p>
+          <h2 class="section-heading display-5">The original Store</h2>
+          <div class="section-rule"></div>
+          <p class="body-copy">
+          The original Store was effectively constrained by the physical layout of the screen. Offers occupied a finite number of predefined positions, meaning the Store had a practical limit to the amount of promotional content it could display at any one time.</p>
+          <p class="body-copy">
+          This created a growing problem as CSR2 expanded its economy and LiveOps programme. The problem wasn't simply that the Store was becoming visually crowded — the underlying content model was becoming restrictive.</p>
+          <p class="body-copy">
+          A fixed Store meant that adding a new promotion could require another offer to be removed or displaced. This created a tension between two systems: the UI wanted a fixed number of items, while LiveOps wanted a flexible number of items.</p>
+          <p class="body-copy mb-0">
+          As the number of campaigns and events increased, the Store needed to become more responsive to the game's changing promotional schedule.</p>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="tech-panel p-4">
+            <div class="meta-label mb-3">The Store increasingly needed to accommodate</div>
+            <ul class="text-muted-custom mb-0">
+              <li class="mb-3">Gold and Cash purchases.</li>
+              <li class="mb-3">Bronze, Silver and Gold Keys.</li>
+              <li class="mb-3">Currency bundles.</li>
+              <li class="mb-3">Promotional bundles.</li>
+              <li class="mb-3">Limited-time offers.</li>
+              <li class="mb-3">Event-related promotions.</li>
+              <li class="mb-3">Gacha/crate-related promotions.</li>
+              <li class="mb-3">Car-specific offers.</li>
+              <li>Special promotional campaigns.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="row g-4 mt-2">
+        <div class="col-lg-10 mx-auto">
+          <img class="breakdown-image"
+               src="./img/nm/csr2/shop_originalLayout.jpg"
+               alt="The original CSR2 Store layout with fixed offer slots">
+          <p class="caption mt-3 mb-0">The original fixed Store layout, where promotional capacity was tied to the number of predefined slots on screen.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Two systems -->
+  <section class="section-padding">
+    <div class="container">
+      <p class="eyebrow">03 / The two systems</p>
+      <h2 class="section-heading display-5">Before &amp; after.</h2>
+      <div class="section-rule"></div>
+
+      <div class="row g-4">
+        <div class="col-lg-6">
+          <div class="tech-panel p-4 h-100">
+            <span class="meta-label">Before</span>
+            <h4>Fixed Store</h4>
+            <p class="body-copy small">
+            The original approach treated the Store primarily as a collection of predefined UI positions. The number of available promotional positions effectively determined the amount of content that could be surfaced.
+            </p>
+            <p class="body-copy small">
+            This worked well for a relatively stable economy. It became increasingly problematic for a LiveOps-driven game.
+            </p>
+            
+            <div class="code-block">
+<pre class="mb-0">┌──────────────────────┐
+│       OFFER 01       │
+├──────────┬───────────┤
+│ OFFER 02 │  OFFER 03 │
+├──────────┼───────────┤
+│ OFFER 04 │  OFFER 05 │
+└──────────┴───────────┘
+
+       FIXED SLOTS</pre>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="tech-panel p-4 h-100">
+            <span class="meta-label">After</span>
+            <h4>Scrollable Store</h4>
+            <p class="body-copy small">
+            The new approach separated the viewport from the amount of available content. The screen remained a controlled viewport, but the Store itself could now contain significantly more promotional content.
+            </p>
+            <p class="body-copy small">
+            This seemingly simple UX change had a much larger systems-level impact.</p>
+            <div class="code-block">
+<pre class="mb-0">┌──────────────────────┐
+│       OFFER 01       │
+├──────────────────────┤
+│       OFFER 02       │
+├──────────────────────┤
+│       OFFER 03       │
+├──────────────────────┤
+│       OFFER 04       │
+├──────────────────────┤
+│       OFFER 05       │
+├──────────────────────┤
+│       OFFER 06       │
+└──────────────────────┘
+            ↓
+          SCROLL
+            ↓
+          SCROLL</pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technical approach -->
+  <section class="section-padding" style="background:rgba(16,22,34,.55);">
+    <div class="container">
+      <p class="eyebrow">04 / Technical approach</p>
+      <h2 class="section-heading display-5">From fixed slots to a content system.</h2>
+      <div class="section-rule"></div>
+
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div class="tech-panel p-4 h-100">
+            <span class="meta-label">Step 01</span>
+            <h4>Decouple content</h4>
+            <p class="body-copy small mb-0">Stop treating each promotional offer as something that required a permanent position. Offers became individual content modules.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="tech-panel p-4 h-100">
+            <span class="meta-label">Step 02</span>
+            <h4>Introduce scrolling</h4>
+            <p class="body-copy small mb-0">A horizontal scrolling Store with a top tab system, allowed the number of promotional items to grow without requiring a redesign of the screen.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="tech-panel p-4 h-100">
+            <span class="meta-label">Step 03</span>
+            <h4>Create dynamic assets</h4>
+            <p class="body-copy small mb-0">Dynamically populating prefab asset holders were created to house pre-existing bundle and purchase content on demand.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="tech-panel p-4 h-100">
+            <span class="meta-label">Step 04</span>
+            <h4>Dynamic availability</h4>
+            <p class="body-copy small mb-0">Offers could be introduced, removed, reordered, time-limited, tied to events or replaced by new promotions.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div class="tech-panel p-4 h-100">
+            <span class="meta-label">Step 05</span>
+            <h4>Changing priorities</h4>
+            <p class="body-copy small mb-0">The Store hierarchy could change according to the current promotional strategy, reflecting what matters now.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row g-4 mt-2">
+        <div class="col-lg-6">
+          <div class="code-block h-100">
+            <div class="syntax-comment">// offers as individual content modules</div>
+            <div><span class="syntax-key">STORE</span></div>
+            <div class="ps-3">├── <span class="syntax-value">Offer</span></div>
+            <div class="ps-3">├── <span class="syntax-value">Offer</span></div>
+            <div class="ps-3">├── <span class="syntax-value">Offer</span></div>
+            <div class="ps-3">├── <span class="syntax-value">Offer</span></div>
+            <div class="ps-3">├── <span class="syntax-value">Offer</span></div>
+            <div class="ps-3">└── <span class="syntax-value">Offer</span></div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="code-block h-100">
+            <div class="syntax-comment">// event offer lifecycle</div>
+            <div><span class="syntax-value">EVENT STARTS</span></div>
+            <div class="ps-3">↓ Event offer becomes available</div>
+            <div class="ps-3">↓ Offer appears in Store</div>
+            <div class="ps-3">↓ Promotion runs</div>
+            <div class="ps-3">↓ Offer expires</div>
+            <div class="ps-3">↓ Offer disappears</div>
+          </div>
+        </div>
+      </div>
+      <div class="row g-4 mt-2">
+        <div class="col-md-6">
+          <img class="breakdown-image"
+               src="./img/nm/csr2/gold.png"
+               alt="Currency and keys offer module">
+          <p class="caption mt-2 mb-0">Currency and keys surfaced as individual offer modules.</p>
+        </div>
+        <div class="col-md-6">
+          <img class="breakdown-image"
+               src="./img/nm/csr2/starterPacks.png"
+               alt="Starter pack offer module">
+          <p class="caption mt-2 mb-0">Starter packs treated as reorderable content modules.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- UX breakdown -->
+  <section class="section-padding">
+    <div class="container">
+      <p class="eyebrow">05 / UX breakdown</p>
+      <h2 class="section-heading display-5">Four UX improvements.</h2>
+      <div class="section-rule"></div>
+
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="tech-panel p-4 h-100">
+            <div class="result-number">01</div>
+            <h5>Scalability</h5>
+            <p class="body-copy small mb-0">The Store was no longer constrained by a small number of fixed promotional positions. More offers could be supported without redesigning the fundamental screen.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="tech-panel p-4 h-100">
+            <div class="result-number">02</div>
+            <h5>Flexibility</h5>
+            <p class="body-copy small mb-0">The content could change according to the needs of the game. New promotions didn't necessarily require a new UI structure.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="tech-panel p-4 h-100">
+            <div class="result-number">03</div>
+            <h5>LiveOps compatibility</h5>
+            <p class="body-copy small mb-0">The Store could better support the cadence of events, campaigns and limited-time promotions as CSR2's LiveOps programme grew.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="tech-panel p-4 h-100">
+            <div class="result-number">04</div>
+            <h5>Player discoverability</h5>
+            <p class="body-copy small mb-0">Scrolling provided a natural way to explore a larger collection of offers. The first screen could focus on the most important promotions while additional content remained discoverable below.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Results -->
+  <section class="section-padding">
+    <div class="container">
+      <p class="eyebrow">06 / Results</p>
+      <h2 class="section-heading display-5">Designed for scaleability.</h2>
+      <div class="section-rule"></div>
+
+      <div class="row g-5 mt-2">
+        <div class="col-lg-7">
+          <p class="body-copy">
+          The most important result was more than the Store could scroll. The change removed a structural limitation on the game's promotional economy, moving the Store from a fixed collection of available offers to a flexible promotional content system.</p>
+          <p class="body-copy">
+          This enabled a much broader range of LiveOps possibilities: more simultaneous offers, event-specific promotions, limited-time deals, dynamic promotional rotations, different offer priorities, more frequent content changes and greater flexibility for the commercial team.</p>
+          <p class="body-copy mb-0">
+          Independent analysis of the later CSR2 Store describes the experience as a long scrolling Store with offers appearing as players scroll, while time-limited offers are aligned with the game's LiveOps event schedule. The current Store demonstrates how far this model could scale, with event sections, currency and key bundles, car credits, parts, VIP offers, daily rewards and other time- or purchase-limited promotions all coexisting within the Store ecosystem.</p>
+        </div>
+
+        <div class="col-lg-5">
+          <div class="tech-panel p-4 p-md-5 h-100">
+            <span class="meta-label">The impact</span>
+            <h4>Bigger than a visual redesign.</h4>
+            <p class="body-copy small mb-3"><strong class="text-light">Before:</strong> Fixed UI → Fixed inventory → Limited promotional capacity.</p>
+            <p class="body-copy small mb-0"><strong class="text-light">After:</strong> Flexible UI → Flexible inventory → Dynamic LiveOps capability.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="tech-panel p-4 p-md-5 mt-5">
+        <span class="meta-label">My contribution</span>
+        <h4>A small UX change unlocked a larger systems-level improvement.</h4>
+        <p class="body-copy">
+        I identified the limitations created by the existing static Store and pushed the UX/design direction that transitioned it towards a scalable, horizontal scrolling content model around 2020. I was also responsible for the creation of the supporting prefab assets and their implementation, taking ownership beyond the initial design direction and helping bring the solution to life.</p>
+
+        <p class="body-copy">
+        Having a full-stack mindset and hands-on work ethic allowed me to identify the majority of the areas that needed improvement, then create, develop and iterate on both the code and art required to deliver the final solution.</p>
+
+        <p class="body-copy">
+        The key design decision was recognising that the problem wasn't simply where to put the next offer. It was that the Store's underlying interaction model was limiting the game's ability to operate its increasingly sophisticated LiveOps economy. By moving to a scrolling model, the Store could evolve from a fixed storefront into a flexible system capable of supporting the changing promotional needs of CSR2.</p>
+        
+      </div>
+
+      <div class="row g-4 mt-5">
+        <div class="col-lg-10 mx-auto">
+          <img class="breakdown-image"
+               src="./img/nm/csr2/chicagoEventBundles.png"
+               alt="Improved scrollable CSR2 Store with LiveOps event bundles">
+          <p class="caption mt-3 mb-0">Improved scrollable Store, with LiveOps event bundles and dynamic offers layered into the content system.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Case study navigation -->
+  <div class="case-nav py-4">
+    <div class="container d-flex flex-wrap justify-content-between align-items-center gap-3">
+      <a href="index.html#projects" class="btn btn-outline-tech rounded-1">
+        <i class="bi bi-arrow-left me-2"></i>All projects
+      </a>
+      
+      <!--
+      <a href="#" class="btn btn-cyan rounded-1">
+        Next case study <i class="bi bi-arrow-right ms-2"></i>
+      </a>
+      -->
+    </div>
+  </div>
+
+  <footer class="py-4">
+    <div class="container d-flex flex-wrap justify-content-between align-items-center gap-3">
+      <small>© <span id="year"></span> Stu Wild · Technical Artist</small>
+      <small class="font-monospace">Built for real-time worlds.</small>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
